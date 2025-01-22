@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:antiquewhite;
+}
+#circle
+{
+    width: 500px;
+    height: 500px;
+    background-color: azure;
+    border-radius:50%;
+    box-shadow:5px 15px 18px 10px;
+}
+#circle::before
+{
+    background-color: black;
+    content: "";
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+    position:absolute;
+    left:280px;
+    top:270px;
+}
+#circle::after
+{
+    background-color:pink;
+    content: "";
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+    position:absolute;
+    right:280px;
+    bottom:270px
+}
+    </style>
+</head>
+<body>
+    <div id="circle">
+     Moon
+     <!-- <div id="inner1"></div>
+     <div id="inner2"></div> -->
+    </div>
+</body>
+</html>
